@@ -13,6 +13,16 @@ export default function Home() {
         body='A study about recursive react components'
         content={<FirstProject />}
       />
+      <ProjectCard
+        title='Recursive components'
+        body='A study about recursive react components'
+        content={<FirstProject />}
+      />
+      <ProjectCard
+        title='Recursive components'
+        body='A study about recursive react components'
+        content={<FirstProject />}
+      />
     </div>
   );
 }
