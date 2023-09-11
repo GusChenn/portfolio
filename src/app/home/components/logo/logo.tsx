@@ -3,53 +3,11 @@
 import React, { useState } from 'react';
 import Triangle from './triangle';
 import STYLES from '@/styles';
-import styled, { css } from 'styled-components';
+import { CenterTriangle, LeftTriangle, LogoContainer, RightTriangle } from './logo.style';
 
 const FULL_DURATION = 1.5;
 const DELAY = 0.3;
 const ROTATION_DEG = 360;
-
-interface TriangleProps {
-  isHovering: boolean;
-  animationDelay: string;
-  rotation: string;
-  duration: string;
-}
-
-const baseTriangleCss = css<TriangleProps>`
-  z-index: 1;
-  transition: rotate ${(props) => props.duration} ease-in-out
-    ${(props) => props.animationDelay};
-`;
-
-const hoveringCss = css<TriangleProps>`
-  rotate: ${(props) => props.rotation};
-`;
-
-const RightTriangle = styled.div<TriangleProps>`
-  ${baseTriangleCss}
-  margin-right: -77px;
-  translate: 0 0.5rem;
-
-  ${(props) => props.isHovering && hoveringCss}
-`;
-
-const CenterTriangle = styled.div<TriangleProps>`
-  ${baseTriangleCss}
-  ${(props) => props.isHovering && hoveringCss}
-`;
-
-const LeftTriangle = styled.div<TriangleProps>`
-  ${baseTriangleCss}
-  margin-left: -77px;
-  translate: 0 0.5rem;
-
-  ${(props) => props.isHovering && hoveringCss}
-`;
-
-const LogoContainer = styled.div`
-  display: flex;
-`;
 
 const Logo = (): React.ReactElement => {
   const [isHovering, setIsHovering] = useState(false);

@@ -1,5 +1,5 @@
 import React from 'react';
-import ProjectCard from './components/project-card';
+import ProjectCard from './components/project-card/project-card';
 
 const FirstProject = (): React.ReactNode => {
   return <div className='text-dark'>sldkjlksafdlsajdl</div>;
