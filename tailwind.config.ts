@@ -20,7 +20,23 @@ const config: Config = {
     fontSize: {
       ...STYLES.base.fontSizes,
     },
-    extend: {},
+    padding: {
+      ...STYLES.base.spaces,
+    },
+    margin: {
+      ...STYLES.base.spaces,
+    },
+    gap: {
+      ...STYLES.base.spaces,
+    },
+    borderRadius: {
+      ...STYLES.extra.borderRadius,
+    },
+    extend: {
+      dropShadow: {
+        highlight: '0 0 12px rgb(0 0 0 / 0.2)',
+      },
+    },
   },
   plugins: [],
 };
