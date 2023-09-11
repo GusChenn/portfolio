@@ -7,5 +7,5 @@ export default function Root() {
 
   router.push('/home');
 
-  return <div className='h-screen bg-background'></div>;
+  return <div className='h-screen bg-dark'></div>;
 }
