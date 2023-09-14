@@ -18,28 +18,28 @@ const Logo = (): React.ReactElement => {
       onMouseLeave={() => setIsHovering(false)}
     >
       <RightTriangle
-        animationDelay={`${DELAY * 0}s`}
-        isHovering={isHovering}
-        rotation={`${ROTATION_DEG}deg`}
-        duration={`${FULL_DURATION}s`}
+        $isHovering={isHovering}
+        $animationDelay={`${DELAY * 0}s`}
+        $rotation={`${ROTATION_DEG}deg`}
+        $duration={`${FULL_DURATION}s`}
       >
         <div className='-rotate-90'>
           <Triangle width='70' height='63' fill={STYLES.base.colors.tertiaty} />
         </div>
       </RightTriangle>
       <CenterTriangle
-        animationDelay={`${DELAY * 1}s`}
-        isHovering={isHovering}
-        rotation={`${ROTATION_DEG}deg`}
-        duration={`${FULL_DURATION - DELAY}s`}
+        $isHovering={isHovering}
+        $animationDelay={`${DELAY * 1}s`}
+        $rotation={`${ROTATION_DEG}deg`}
+        $duration={`${FULL_DURATION - DELAY}s`}
       >
         <Triangle width='70' height='63' fill={STYLES.base.colors.secondary} />
       </CenterTriangle>
       <LeftTriangle
-        animationDelay={`${DELAY * 2}s`}
-        isHovering={isHovering}
-        rotation={`${ROTATION_DEG}deg`}
-        duration={`${FULL_DURATION - 2 * DELAY}s`}
+        $isHovering={isHovering}
+        $animationDelay={`${DELAY * 2}s`}
+        $rotation={`${ROTATION_DEG}deg`}
+        $duration={`${FULL_DURATION - 2 * DELAY}s`}
       >
         <div className='rotate-90'>
           <Triangle width='70' height='63' fill={STYLES.base.colors.primary} />
