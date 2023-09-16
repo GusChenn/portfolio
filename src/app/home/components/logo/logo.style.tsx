@@ -44,6 +44,6 @@ export const LogoContainer = styled.div`
   width: 100%;
   justify-content: center;
   align-items: end;
-  min-height: 100px;
+  min-height: 130px;
   margin-bottom: ${STYLES.base.spaces[16]};
 `;
