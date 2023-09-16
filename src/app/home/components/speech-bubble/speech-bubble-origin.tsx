@@ -5,7 +5,7 @@ export default function SpeechBubbleOrigin() {
     <svg
       width='148'
       height='156'
-      viewBox='0 -9 86 156'
+      viewBox='0 -9.2 86 156'
       fill='none'
       xmlns='http://www.w3.org/2000/svg'
     >
@@ -27,7 +27,7 @@ export default function SpeechBubbleOrigin() {
           width='63.3708'
           height='109.042'
           filterUnits='userSpaceOnUse'
-          color-interpolation-filters='sRGB'
+          colorInterpolationFilters='sRGB'
         >
           <feFlood flood-opacity='0' result='BackgroundImageFix' />
           <feColorMatrix

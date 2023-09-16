@@ -22,6 +22,7 @@ const SpeechBubbleBody = styled.div`
   font-size: ${STYLES.base.fontSizes.large};
   padding: ${STYLES.base.spaces[16]} ${STYLES.base.spaces[48]};
   padding-left: 0;
+  margin-left: -2px;
   font-weight: normal;
   color: ${STYLES.base.colors.dark};
 `;
