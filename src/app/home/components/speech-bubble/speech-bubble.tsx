@@ -3,6 +3,7 @@
 import STYLES from '@/styles';
 import React from 'react';
 import styled, { css } from 'styled-components';
+import SpeechBubbleOrigin from './speech-bubble-origin';
 
 interface SpeechBubbleProps {
   children: React.ReactNode;
@@ -20,24 +21,15 @@ const SpeechBubbleBody = styled.div`
   border-bottom-right-radius: 50px;
   font-size: ${STYLES.base.fontSizes.large};
   padding: ${STYLES.base.spaces[16]} ${STYLES.base.spaces[48]};
-  padding-left: ${STYLES.base.spaces[24]};
+  padding-left: 0;
   font-weight: normal;
   color: ${STYLES.base.colors.dark};
 `;
 
-const SpeechBubblePointer = styled.div`
-  ${commonCss}
-  height: 100px;
-  width: 70px;
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 100%;
-  clip-path: polygon(0% 14%, 100% 100%, 100% 0%, 0% 0%);
-`;
-
 export default function SpeechBubble({ children }: SpeechBubbleProps) {
   return (
-    <div className='flex items-end'>
-      <SpeechBubblePointer />
+    <div className='flex max-h-min items-end'>
+      <SpeechBubbleOrigin />
       <SpeechBubbleBody>{children}</SpeechBubbleBody>
     </div>
   );
