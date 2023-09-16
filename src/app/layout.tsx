@@ -12,7 +12,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang='en'>
       <body
-        className='flex h-screen w-screen flex-col items-center bg-dark font-body font-normal text-primary'
+        className='flex h-screen w-full flex-col items-center bg-dark font-body font-normal text-primary'
         style={{ scrollbarGutter: 'stable' }}
       >
         <StyledComponentsRegistry>
