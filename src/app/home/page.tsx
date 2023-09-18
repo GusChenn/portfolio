@@ -4,7 +4,7 @@ import Footer from './components/footer/footer';
 
 export default function Home() {
   return (
-    <div className='flex w-[1200px] flex-col justify-between'>
+    <div className='flex h-full w-[1200px] flex-col justify-between'>
       <ProjectsBorad />
       <Footer />
     </div>

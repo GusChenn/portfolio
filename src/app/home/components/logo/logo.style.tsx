@@ -42,8 +42,11 @@ export const LeftTriangle = styled.div<TriangleProps>`
 export const LogoContainer = styled.div`
   display: flex;
   width: 100%;
+  height: 100px;
   justify-content: center;
   align-items: end;
-  min-height: 100px;
-  margin-bottom: ${STYLES.base.spaces[16]};
+  padding-bottom: ${STYLES.base.spaces[16]};
+  margin-top: -20px;
+  /* scale: 0.8; */
+  /* translate: 0 -40px; */
 `;

@@ -34,7 +34,8 @@ const config: Config = {
     },
     extend: {
       dropShadow: {
-        highlight: '0 0 12px rgb(0 0 0 / 0.2)',
+        highlight: '0 0 6px rgba(var(--secondary), 0.3)',
+        standard: '0 0 6px rgb(0 0 0 / 0.4)',
       },
     },
   },

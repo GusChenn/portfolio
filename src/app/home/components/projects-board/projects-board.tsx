@@ -7,22 +7,24 @@ const FirstProject = (): React.ReactNode => {
 
 export default function ProjectsBorad() {
   return (
-    <div className='flex h-fit w-full flex-wrap justify-between overflow-hidden py-16'>
-      <ProjectCard
-        title='Recursive components'
-        body='A study about recursive react components'
-        content={<FirstProject />}
-      />
-      <ProjectCard
-        title='Recursive components'
-        body='A study about recursive react components'
-        content={<FirstProject />}
-      />
-      <ProjectCard
-        title='Recursive components'
-        body='A study about recursive react components'
-        content={<FirstProject />}
-      />
+    <div className='flex grow items-center'>
+      <div className='flex h-fit w-full flex-wrap justify-between overflow-hidden px-8'>
+        <ProjectCard
+          title='Recursive components'
+          body='A study about recursive react components'
+          content={<FirstProject />}
+        />
+        <ProjectCard
+          title='Recursive components'
+          body='A study about recursive react components'
+          content={<FirstProject />}
+        />
+        <ProjectCard
+          title='Recursive components'
+          body='A study about recursive react components'
+          content={<FirstProject />}
+        />
+      </div>
     </div>
   );
 }

@@ -2,7 +2,7 @@ import Image from 'next/image';
 import React from 'react';
 import profilePicture from '/public/foto_perfil.png';
 
-const PICTURE_SIZE = 250;
+const PICTURE_SIZE = 170;
 
 export default function ProfilePicture() {
   return (

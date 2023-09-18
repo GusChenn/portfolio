@@ -13,16 +13,13 @@
 }
 
 :root {
-  --primary: rgb(229, 229, 203);
-  --secondary: rgb(213, 206, 163);
-  --tertiary: rgba(54, 47, 44, 1);
-  --dark: rgba(35, 33, 31, 1);
-  --transparent: rgbba(0, 0, 0, 0);
+  --primary: 229, 229, 203;
+  --secondary: 213, 206, 163;
+  --tertiary: 54, 47, 44;
+  --dark: 35, 33, 31;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  scrollbar-base-color: red;
-  scrollbar-arrow-color: red;
 }
 
 ::-webkit-scrollbar {
@@ -35,9 +32,9 @@
 
 ::-webkit-scrollbar-thumb {
   border-radius: 2px;
-  background: var(--primary); /* Color of the handle */
+  background: rgb(var(--primary)); /* Color of the handle */
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--secondary); /* Color of the handle on hover */
+  background: rgb(var(--secondary)); /* Color of the handle on hover */
 }

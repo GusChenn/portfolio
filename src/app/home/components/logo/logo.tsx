@@ -13,15 +13,14 @@ const Logo = (): React.ReactElement => {
   const [isHovering, setIsHovering] = useState(false);
 
   return (
-    <LogoContainer
-      onMouseEnter={() => setIsHovering(true)}
-      onMouseLeave={() => setIsHovering(false)}
-    >
+    <LogoContainer>
       <RightTriangle
         $isHovering={isHovering}
         $animationDelay={`${DELAY * 0}s`}
         $rotation={`${ROTATION_DEG}deg`}
         $duration={`${FULL_DURATION}s`}
+        onMouseEnter={() => setIsHovering(true)}
+        onMouseLeave={() => setIsHovering(false)}
       >
         <div className='-rotate-90'>
           <Triangle width='70' height='63' fill={STYLES.base.colors.tertiaty} />
@@ -32,6 +31,8 @@ const Logo = (): React.ReactElement => {
         $animationDelay={`${DELAY * 1}s`}
         $rotation={`${ROTATION_DEG}deg`}
         $duration={`${FULL_DURATION - DELAY}s`}
+        onMouseEnter={() => setIsHovering(true)}
+        onMouseLeave={() => setIsHovering(false)}
       >
         <Triangle width='70' height='63' fill={STYLES.base.colors.secondary} />
       </CenterTriangle>
@@ -40,6 +41,8 @@ const Logo = (): React.ReactElement => {
         $animationDelay={`${DELAY * 2}s`}
         $rotation={`${ROTATION_DEG}deg`}
         $duration={`${FULL_DURATION - 2 * DELAY}s`}
+        onMouseEnter={() => setIsHovering(true)}
+        onMouseLeave={() => setIsHovering(false)}
       >
         <div className='rotate-90'>
           <Triangle width='70' height='63' fill={STYLES.base.colors.primary} />
