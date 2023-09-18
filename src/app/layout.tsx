@@ -11,11 +11,12 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang='en'>
-      <body className='flex h-screen w-screen flex-col items-center bg-dark font-body font-normal text-primary'>
+      <body
+        className='flex h-screen w-screen flex-col items-center bg-dark font-body font-normal text-primary'
+        style={{ scrollbarGutter: 'stable' }}
+      >
         <StyledComponentsRegistry>
-          <div className='flex h-[170px] w-full items-center justify-center'>
-            <Logo />
-          </div>
+          <Logo />
           {children}
         </StyledComponentsRegistry>
       </body>

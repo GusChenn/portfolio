@@ -1,28 +1,12 @@
 import React from 'react';
-import ProjectCard from './components/project-card';
-
-const FirstProject = (): React.ReactNode => {
-  return <div className='text-dark'>sldkjlksafdlsajdl</div>;
-};
+import ProjectsBorad from './components/projects-board/projects-board';
+import Footer from './components/footer/footer';
 
 export default function Home() {
   return (
-    <div className='flex h-[550px] w-5/6 max-w-screen-2xl flex-wrap justify-center gap-24 overflow-hidden p-16'>
-      <ProjectCard
-        title='Recursive components'
-        body='A study about recursive react components'
-        content={<FirstProject />}
-      />
-      <ProjectCard
-        title='Recursive components'
-        body='A study about recursive react components'
-        content={<FirstProject />}
-      />
-      <ProjectCard
-        title='Recursive components'
-        body='A study about recursive react components'
-        content={<FirstProject />}
-      />
+    <div className='flex w-[1200px] flex-col justify-between'>
+      <ProjectsBorad />
+      <Footer />
     </div>
   );
 }
