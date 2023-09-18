@@ -1,5 +1,6 @@
 import React from 'react';
 import ProjectCard from '../project-card/project-card';
+import RecursiveComponent from '../../projects/recursive-component/recursive-component.project';
 
 const FirstProject = (): React.ReactNode => {
   return <div className='text-dark'>sldkjlksafdlsajdl</div>;
