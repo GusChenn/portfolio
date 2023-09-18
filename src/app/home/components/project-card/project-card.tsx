@@ -11,7 +11,9 @@ const ProjectCard = ({ title, body, content }: ProjectCardProps): React.ReactEle
     <div className='flex h-fit w-fit flex-col rounded-5 bg-tertiaty p-16 align-baseline drop-shadow-standard transition delay-0 duration-300 ease-linear hover:drop-shadow-highlight'>
       <div className='font-title text-large font-bold'>{title}</div>
       <div className='mb-24 font-body font-normal'>{body}</div>
-      <div className='h-[250px] w-[350px] rounded-5 bg-primary'>{content}</div>
+      <div className='h-[250px] w-[350px] overflow-hidden rounded-[1px] bg-primary outline outline-4 outline-primary'>
+        {content}
+      </div>
     </div>
   );
 };
